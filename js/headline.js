@@ -4,7 +4,7 @@
 "use strict";
 var i = 0;
 var txt = "I'm a Full Stack Web Developer_";
-var speed = 70;
+var speed = 100;
 
 function typeWriter() {
   	if (i < txt.length) {
@@ -17,3 +17,9 @@ function typeWriter() {
 document.body.onload = function() {
  typeWriter()
 }
+
+
+$(".menu, nav ul li a").on("click", function(e) {
+  e.preventDefault();
+  $("nav ul").toggleClass("active");
+});

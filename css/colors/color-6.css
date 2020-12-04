@@ -1,0 +1,72 @@
+/* Main Rules */
+.separator {background: #f9ca3b;}
+.tooltip-inner {background-color: #f9ca3b;}
+.tooltip.top .tooltip-arrow {border-top-color: #f9ca3b;}
+::-moz-selection {background: #f9ca3b;}
+::selection {background: #f9ca3b;}
+.btn-custom {border: 1px solid #f9ca3b;}
+.btn-custom:hover {background: #f9ca3b;}
+.btn-custom.reverse {background: #f9ca3b;}
+.btn-custom.reverse:hover {border: 1px solid #f9ca3b;}
+.btn-custom.light:hover {color: #f9ca3b !important;}
+
+/* Color-Box Switch */
+.color-switcher h6 {background: #f9ca3b;}
+.color-switcher .switcher-btn {background: #f9ca3b;}
+.color-switcher .map-styles li a:hover {background: #f9ca3b;}
+
+/* Home Section */
+#home .navbar span.colored-brand {background: #f9ca3b;}
+#home .navbar .nav>li>a:focus, #home .navbar .nav>li>a:hover {color: #f9ca3b;}
+#home .navbar.scrolled .navbar-brand {color: #f9ca3b;}
+#home .navbar.scrolled .navbar-toggle .icon-bar {background-color: #f9ca3b;}
+#home .navbar.scrolled .nav .active a {background: #f9ca3b;}
+.hero-content-wrapper .hero-content span.dot {background: #f9ca3b;}
+#home .go-down:hover {background: #f9ca3b; border-color: #f9ca3b;}
+
+/* About Section */
+#about .info-tabs .nav-tabs>li>a {background: #f9ca3b;}
+#about .info-tabs .nav-tabs>li.active>a,
+#about .info-tabs .nav-tabs>li.active>a:focus,
+#about .info-tabs .nav-tabs>li.active>a:hover,
+#about .info-tabs .nav-tabs>li>a:hover {border-color: #f9ca3b;}
+#about .info-tabs .tab-content {border: 1px solid #f9ca3b;}
+
+/* Ready Section */
+#ready {background: #f9ca3b;}
+
+/* Services Section */
+#services .service i:after {box-shadow: 0px 0px 0px 4px #f9ca3b;}
+#services .service:hover i {background: #f9ca3b;}
+
+/* Skills Section */
+#skills .skill .chart span.percent {color: #f9ca3b;}
+
+/* Testimonials Section */
+#testimonials .carousel .carousel-indicators li.active {background: #f9ca3b;}
+#testimonials .carousel .carousel-control {border: 1px solid #f9ca3b;}
+#testimonials .carousel .carousel-control:hover {background: #f9ca3b;}
+
+/* Experiences Section */
+#experiences .timeline .event .event-left i {color: #f9ca3b;}
+#experiences .timeline .event .event-left h4 {background: #f9ca3b;}
+#experiences .timeline .event .event-right::before {background: #f9ca3b;}
+#experiences .timeline .event .event-right::after {border: 2px solid #f9ca3b;}
+
+/* Contact Section */
+#contact .call-info i {background: #f9ca3b;}
+#contact .call-info:hover .info-wrapper {background: #f9ca3b;}
+#contact .call-info:hover i {color: #f9ca3b;}
+#contact form #submit:hover {background: #f9ca3b; border-color: #f9ca3b;}
+
+/* To Top Button */
+#toTop {background: #f9ca3b;}
+
+/* -------------------------------------
+              Media Queries
+* ------------------------------------- */
+@media (max-width: 991px) { 
+	/* Adjusting the navbar */
+	#home .navbar .nav .active a, #home .navbar .navbar-brand {color: #f9ca3b;}
+	#home .navbar .navbar-toggle .icon-bar {background: #f9ca3b;}
+}
