@@ -165,7 +165,7 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #fff;
+	background: #000;
 }
 .loading .loading-wrapper {
 	position: relative;
@@ -180,12 +180,12 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 	width: 50px;
 	height: 50px;
 	margin: auto;
-	background: #f7465b;
+	background: #0C7CD5;
 	-webkit-animation: rotateRec 1.5s infinite ease-in-out;
 			animation: rotateRec 1.5s infinite ease-in-out;
 }
 .loading .loading-wrapper h4 {
-	color: #f7465b;
+	color: #fff;
 	letter-spacing: 6px;
 	margin-top: 30px;
 }
@@ -576,6 +576,9 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 }
 #about .info-tabs .tab-content span {font-weight: 400;}
 
+#profile p{
+	text-align: left;
+}
 /* End About Me Section */
 
 
@@ -771,46 +774,137 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 /* -------------------------------------
     ( 13 ) Start Skills Section
 * ------------------------------------- */
-#skills {
-	background: #333 url("../img/skills.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position: relative;
-}
-#skills.parallax {background-attachment: fixed;}
-#skills h2, #skills p, #skills h3 {color: #fff;}
-#skills h3 {margin-top: 20px;}
-#skills p {padding-left: 15px; padding-right: 15px;}
-#skills .skill {margin: 40px 0;}
-#skills .skill .chart {position: relative; min-height: 155px;}
-#skills .skill .chart span {
-	display: inline-block;
-	position: absolute;
-	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-}
-#skills .skill .chart span.skill-timer {
-	top: 50%;
-	left: 48%;
-	color: #fff;
-	font-size: 30px;
-}
-#skills .skill .chart span.percent {
-	left: 50%;
-	top: 60%;
-	font-size: 20px;
-	margin-left: 20px;
-	color: #ddd;
+/* My Skills Section */
+#skills{
+	background-color: #ccc;
 }
 
-/* End Skills Section */
+.inner {
+    padding-top: 65px;
+}
+
+.skills-title{
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    position: relative;
+}
+
+.skills-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #0C7CD5;
+    border-radius: 2px;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #0C7CD5;
+    cursor: pointer;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+    width: 35px;
+}
+
+.skill-box:hover .img{
+    transform: translateY(-10px);
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #0C7CD5;
+    transition: .5s;
+}
+
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #0C7CD5;
+    transition: .5s;
+}
+
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transition: .5s;
+	background-color: white;
+}
+
+.img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background-color: white;
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3{
+    color: black;
+    margin-top: 0.5rem;
+}
+
+.skill-icon{
+    width: 65px;
+    z-index: 2;
+}
+
+/**
 
 
 /* -------------------------------------
     ( 14 ) Start Portfolio Section
 * ------------------------------------- */
+#portfolio{
+	background-color: #ccc;
+}
+
 #portfolio .controls {margin-bottom: 40px;}
 #portfolio .controls button {margin: 0 5px;}
 #portfolio .project {
@@ -893,7 +987,7 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 /* -------------------------------------
     ( 15 ) Start Testimonials Section
 * ------------------------------------- */
-#testimonials {
+#tetimonials {
 	background: #333 url("../img/testimonials.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -986,7 +1080,7 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
     ( 17 ) Start Contact Section
 * ------------------------------------- */
 #contact {
-	background: #333 url("../img/contact.jpg");
+	background-color: #fff #333 url("../img/contact.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1290,6 +1384,12 @@ footer .copyright i {
 		margin-left: auto;
 		margin-right: auto;		
 	}
+
+	.skills-container{
+        grid-template-columns: repeat(7, 1fr);
+        padding: 2rem 50px;
+    }
+
 }
 
 @media (max-width: 767px) { 
@@ -1314,6 +1414,12 @@ footer .copyright i {
 	#experiences .timeline .event .event-left i {display: none;}
 }
 
+
+    .skills-container{
+        grid-template-columns: repeat(5, 1fr);
+        padding: 2rem 50px;
+    }
+
 @media (max-width: 489px) {
 	
 	/* Home Section */
@@ -1327,6 +1433,11 @@ footer .copyright i {
 		margin: 20px auto;
 		width: 60%;
 	}
+
+	.skills-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
 }
 
 /* End Media Queries */
