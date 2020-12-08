@@ -226,7 +226,7 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 
 /*** 5-a - Backgrounds ***/
 #home {
-	background-color: #333;
+	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -640,6 +640,8 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 /* -------------------------------------
     ( 7 ) Start Ready Section
 * ------------------------------------- */
+
+
 #ready h3 {color: #fff; margin-bottom: 40px;}
 #ready a {color: #fff; margin: 0px 10px 40px;}
 
@@ -701,6 +703,18 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 /* -------------------------------------
     ( 10 ) Start Services Section
 * ------------------------------------- */
+#services{
+	background-color: #0C7CD5;
+}
+
+#services h2, #services h4 {
+	color: white;
+}
+
+#services p{
+	color: #ccc;
+}
+
 #services .separator {margin: 10px auto;}
 #services .service {margin-bottom: 40px;}
 #services .service i {
@@ -714,6 +728,7 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 	margin-bottom: 20px;
 	border-radius: 50%;
 	color:  #333;
+	color: #0C7CD5;
 	background: #f2f2f2;
 	-webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
     		transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
@@ -830,9 +845,6 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
     ( 13 ) Start Skills Section
 * ------------------------------------- */
 /* My Skills Section */
-#skills{
-	background-color: #ccc;
-}
 
 .inner {
     padding-top: 65px;
@@ -957,10 +969,6 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 /* -------------------------------------
     ( 14 ) Start Portfolio Section
 * ------------------------------------- */
-#portfolio{
-	background-color: #ccc;
-}
-
 #portfolio .controls {margin-bottom: 40px;}
 #portfolio .controls button {margin: 0 5px;}
 #portfolio .project {
@@ -1446,7 +1454,7 @@ footer .copyright {
 	}
 
 	.skills-container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         padding: 2rem 50px;
     }
 }
