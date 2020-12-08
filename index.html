@@ -29,7 +29,7 @@
 	<!-- Custom styles css file -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Color styles css file -->
-	<link rel="stylesheet" href="css/colors/color-5.css">
+	<link rel="stylesheet" href="css/colors/color.css">
 	<!-- Social media icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -90,7 +90,6 @@
 		<!-- Start Content -->
 		<div class="hero-content-wrapper overlay">
 			<div class="hero-content text-center">
-				<div id="particles-js"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
@@ -102,41 +101,33 @@
 							<a href="#contact" class="scroll-link btn btn-custom">Resume</a>
 						</div>
 					</div>
-					<div class="contact-social-div">
-					
-						<ul class="contact-social">
-							<li>
-								<a><i class="fa fa-download"></i> My resume</a></a>
-							</li>
-							<li>
-								<a href="#" target="_blank" title="Twitter"> <i class="fa fa-twitter"></i> </a>
-							</li>
-							<li>
-								<a href="#0" target="_blank" title="Instagram"> <i class="fa fa-instagram"></i></a>
-							</li>
-							<li>
-								<a href="#0" target="_blank" title="Git Hub"> <i class="fa fa-github"></i> </a>
-							</li>
-							<li>
-								<a href="#0" target="_blank" title="Linkedin"> <i class="fa fa-linkedin"></i> </a>
-							</li>
-							<li>
-								<a href="tel:+2348132737794" target="_blank" title="Phone Number"> <i class="fa fa-phone"></i> </a>
-							</li>
-							<li>
-								<a href="mailto:ayomidebakre@gmail.com" target="_blank" title="Mail"> <i class="fa fa-envelope"></i> </a>
-							</li>
-						</ul>
+					<div id="home-contact">
+						<div class="row">
+							<div class="col-xs-12 social-wrapper">
+									<!-- Follow Me Social Links -->
+									<div class="social-links">
+										<a href="#" class="icon fb"></a> <!-- Facebook Link -->
+										<a href="#" class="icon tw"></a> <!-- Twitter Link -->
+										<a href="#" class="icon gh"></a> <!-- Github Link -->
+										<a href="#" class="icon cp"></a> <!-- Codepen Link -->
+										<a href="#" class="icon li"></a> <!-- Linkedin Link -->
+										<a href="#" class="icon dr"></a> <!-- Dribbble Link -->
+										<a href="#" class="icon be"></a> <!-- Behance Link -->
+									</div>
+							</div>
+						</div>
 					</div>
+
 				</div>				
 			</div>
 		</div> <!-- End Content -->
+		
 		<a href="#about" class="go-down scroll-link">
 			<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
 		</a>
 	</div>
 	<!-- ends Home Section  -->
-	
+
 	<!-- Start About Me Section -->
 	<section id="about" class="section">
 		<div class="container">
@@ -800,7 +791,6 @@
 					<div class="section-intro">
 						<h2>Contact Me</h2>
 						<div class="separator centered"></div>
-						<p class="para">Here you can find me. I'd like to hear from you all. You can hire me, ask me about anything or buy me coffee.</p>
 					</div>
 				</div>	
 			</div>
@@ -810,8 +800,8 @@
 						<div class="col-sm-6 col-xs-12 call-info wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
 							<div class="info-wrapper">
 								<i class="fa fa-home fa-fw"></i>
-								<h4>My Place</h4>
-								<p class="para">1234 st, Darlon city, Egypt <br> 414220</p>
+								<h4>My Address</h4>
+								<p class="para">Lagos, Nigeria</p>
 							</div>	
 						</div>
 						<div class="col-sm-6 col-xs-12 call-info wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
@@ -830,22 +820,14 @@
 								<p class="para">info@prema.ca <br> admin@prema.ca</p>
 							</div>	
 						</div>
-						<div class="col-sm-6 col-xs-12 call-info wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
-							<div class="info-wrapper">
-								<i class="fa fa-clock-o fa-fw"></i>
-								<h4>Work Time</h4>
-								<p class="para">Sat - Thr : 8.00 - 16.00 <br> Friday: Holiday</p>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
 					<!-- Start Contact Form -->
-					<form data-toggle="validator" id="contact-form" role="form" action="https://formspree.io/f/mgepllvb" method="post">
+					<form data-toggle="validator" id="contact-form" role="form" action="https://formspree.io/f/mnqogjga" method="POST">
 						<div class="form-intro">
 							<h4>Leave Me A Message</h4>
 							<div class="separator"></div>
-							<p class="para">You can ask me about anything here, just type your name and e-mail and I'll answer you as soon as possible</p>
 						</div>
 						<div class="form-group">
 							<div class="input-group">
@@ -861,7 +843,7 @@
 								<label for="mail" class="input-group-addon">
 									<span class="glyphicon glyphicon-envelope"></span>
 								</label>
-								<input name="_replyto" type="email" placeholder="Your E-mail" class="form-control col-xs-12" id="mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-error="Please enter a correct E-mail." required>
+								<input type="text" name="_replyto" placeholder="Your E-mail" class="form-control col-xs-12" id="mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-error="Please enter a correct E-mail." required>
 							</div>							
 							<span class="help-block with-errors"></span>
 						</div>
@@ -921,9 +903,6 @@
 		</div>
 	</div>
 	<!-- End To Top Button -->
-	<!--particles-->
-	<script src="js/variants.js"></script>
-	<script src="js/particles.js"></script>
 	<!-- jQuery JS file -->
 	<script src="js/jquery-1.12.1.min.js"></script>
 	<!-- Bootstrap JS file -->
