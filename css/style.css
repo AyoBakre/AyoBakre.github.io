@@ -98,6 +98,8 @@ p.para {
 	height: 3px;
 	margin: 10px 0;
 }
+
+
 .separator.centered {margin: 10px auto;}
 a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 #Container .mix {display: none;}
@@ -226,20 +228,13 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 
 /*** 5-a - Backgrounds ***/
 #home {
-	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
-	
 }
+
 #home.main {background-image: url("../img/background.jpg");}
-#home.bg-2 {background-image: url("../img/bg-06.jpg");}
-#home.bg-3 {background-image: url("../img/bg-08.jpg");}
-#home.parallax {
-	background-image: url("../img/bg-05.jpg");
-	background-attachment: fixed;
-}
 
 /*** 5-b - NavBar ***/
 
@@ -1414,6 +1409,10 @@ footer .copyright {
 @media (max-width: 767px) { 
 
 	/* Home Section */
+	
+	#home{
+		background-size: cover;
+	}
 	.hero-content-wrapper .hero-content h1 {letter-spacing: 0px; font-size: 4.5em;}
 	.hero-content-wrapper .hero-content h3 {font-size: 1.5em;}
 	.fs-slider-hero .slider .slick-prev,
@@ -1432,8 +1431,6 @@ footer .copyright {
 	#experiences .timeline .event .event-right .content-wrapper::before,
 	#experiences .timeline .event .event-left i {display: none;}
 }
-
-
     .skills-container{
         grid-template-columns: repeat(5, 1fr);
         padding: 2rem 50px;
@@ -1442,6 +1439,9 @@ footer .copyright {
 @media (max-width: 489px) {
 	
 	/* Home Section */
+	#home{
+		background-size: cover;
+	}
 	.hero-content-wrapper .hero-content h1 {font-size: 3em;}
 	.hero-content-wrapper .hero-content h3 {font-size: 1em;}
 	/* #home a.go-down {display: none;}
