@@ -232,10 +232,10 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 }
 
 #home.main {
-	background-image: url("../img/background.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
+	background: url("../img/background.jpg") no-repeat center center fixed;
 	background-size: cover;
+	height: 100%;
+	overflow: hidden; 
 }
 
 /*** 5-b - NavBar ***/
