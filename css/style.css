@@ -228,13 +228,15 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 
 /*** 5-a - Backgrounds ***/
 #home {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 	position: relative;
 }
 
-#home.main {background-image: url("../img/background.jpg");}
+#home.main {
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
 /*** 5-b - NavBar ***/
 
@@ -574,6 +576,7 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 /* ---------------------------------------
 	( 6 ) Start About Section 
 ----------------------------------------- */
+
 #about .profile-intro {margin-bottom: 60px;}
 #about .profile-intro .profile-img-wrapper {margin-bottom: 40px;}
 #about .profile-intro .profile-img-wrapper img {
@@ -1410,9 +1413,6 @@ footer .copyright {
 
 	/* Home Section */
 	
-	#home{
-		background-size: cover;
-	}
 	.hero-content-wrapper .hero-content h1 {letter-spacing: 0px; font-size: 4.5em;}
 	.hero-content-wrapper .hero-content h3 {font-size: 1.5em;}
 	.fs-slider-hero .slider .slick-prev,
@@ -1439,9 +1439,7 @@ footer .copyright {
 @media (max-width: 489px) {
 	
 	/* Home Section */
-	#home{
-		background-size: cover;
-	}
+	
 	.hero-content-wrapper .hero-content h1 {font-size: 3em;}
 	.hero-content-wrapper .hero-content h3 {font-size: 1em;}
 	/* #home a.go-down {display: none;}
