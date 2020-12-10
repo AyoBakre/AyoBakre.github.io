@@ -1,31 +1,5 @@
 /* global $, alert, console*/
 
-/* ---------------------------------------
-
-=>  Table of Content  <=
-
-1 - Adjust Loading Page
-2 - Make Header Full Height
-3 - Parallax Effect
-4 - Move to section onclick on navbar link
-5 - change navbar background on scroll
-6 - Hide menu after clicking on a link
-7 - Launch To Top Button when scroll
-8 - Go To Top onclick on toTop Button
-9 - Color Switcher && Changing Colors
-10 - Launch Bootstrap Tabs in About-Me Section
-11 - Start numbers animate at fun-facts section
-12 - Start EasyPieChart plugin
-13 - start mixitup plugin in portfolio section
-14 - start Tooltip in portfolio section
-15 - start Carousel in Testimonials section
-16 - Typed Text in Home Section
-17 - Slick Slider in Home Section
-	17-a- FullSize Slider Hero
-	17-b- Fade Slider Hero
-18 - Contact Form
-
---------------------------------------- */
 
 (function($) {
 	"use strict";
@@ -134,75 +108,12 @@
 	});
 
 	/* ---------------------------------------------------
-			9 - Color Switcher && Changing Colors
-	----------------------------------------------------- */
-	/* Variables */
-	var colorSwitcher 	= $(".color-switcher"),
-		switcherBtn 	= $(".switcher-btn"),
-		colorSlot 		= $(".color-switcher .color-slot");
-	/* Show/Hide color switcher on clicking on switcher button */
-	switcherBtn.on("click", function(e) {
-		e.preventDefault();
-		if(colorSwitcher.hasClass("closed")) {
-			colorSwitcher.removeClass("closed").animate({
-				left: "0px"
-			}, 300, "easeInOutBack");
-		} else {
-			colorSwitcher.animate({
-				left: "-200px"
-			}, 300, "easeInOutBack").addClass("closed");
-		}
-	});
-
-	/* Giving every color-slot it's background color */
-	colorSlot.css("background-color", function() {
-		return $(this).attr("data-background");
-	});
-
-	/* Changing color when clicking on color-slot  */
-	colorSlot.on("click", function() {
-		var dataTarget = $(this).attr("data-target");
-		$("link[href*='color-']").attr("href", dataTarget);		
-	});
-
-	/* ---------------------------------------------------
 			10 - Launch Bootstrap Tabs in About-Me Section 
 	----------------------------------------------------- */
 	$(".info-tabs .nav-tabs a").on("click", function(e) {
 		e.preventDefault();
 		$(this).tab("show");
 	});
-
-    /* ---------------------------------------------------
-			11 - Start numbers animate at fun-facts section 
-	----------------------------------------------------- */
-    $("#fun-facts").appear(function() {
-        $(".timer").countTo();
-    }, {
-        accX: 0,
-        accY: -350
-    });
-
-    /* ---------------------------------------------------
-			12 - Start EasyPieChart plugin 
-	----------------------------------------------------- */
-    $("#skills").appear(function() {
-        $(".chart").easyPieChart({
-        	easing: "easeOutBack",
-            barColor: "#fff",
-            trackColor: false,
-            scaleColor: false,
-            lineWidth: 10,
-            lineCap: "round",
-            size: 150,
-            animate: 1500
-        });
-        // start numbers CountTo at skills section //
-        $(".skill-timer").countTo();               
-    }, {
-        accX: 0,
-        accY: -350
-    });
 
     /* ---------------------------------------------------
 			13 - start mixitup plugin in portfolio section
@@ -215,51 +126,6 @@
 	$('[data-toggle="tooltip"]').tooltip({
 		delay: 150
 	});
-
-    /* ---------------------------------------------------
-			15 - start Carousel in Testimonials section
-	----------------------------------------------------- */
-    $("#carousel").carousel();
-
-    /* ---------------------------------------------------
-			16 - Typed Text in Home Section
-	----------------------------------------------------- */
-	$(".typed-element").typed({
-    	strings: ["Creative.", "Web Designer.", "Web Developer.", "Thinker."],
-    	typeSpeed: 10,
-    	loop:true,
-    	backDelay: 2000
-    });
-
-    /* ---------------------------------------------------
-			17 - Slick Slider in Home Section
-	----------------------------------------------------- */
-	/*  17-a- FullSize Slider Hero  */
-	$(".fs-slider-hero .slider").slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		useCSS: true,
-		fade: true,
-		dots: false,
-		arrows: true,
-		prevArrow: '<button type="button" class="slick-prev"><span class="fa fa-long-arrow-left"></span></button>',
-		nextArrow: '<button type="button" class="slick-next"><span class="fa fa-long-arrow-right"></span></button>',
-		autoplay: true,
-		autoplaySpeed: 4000,
-	});
-
-	/* 17-b- Fade Slider Hero  */
-	$(".fade-slider .slider").slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		useCSS: true,
-		fade: true,
-		dots: false,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 4000,
-	});
-
 
     /* ---------------------------------------------------
 			18 - Contact Form
@@ -276,29 +142,54 @@
 			submitForm();
 		}
 	});
-	// Submit Function
-	function submitForm() {
-		// Some Variables
-		var name = $("#name").val(),
-			mail = $("#mail").val(),
-			message = $("#message").val();
-		$.ajax({
-			type: "POST",
-			url: "php/contact.php",
-			data: "name=" + name + "&mail=" + mail + "&message=" + message,
-			beforeSend: function(text) {
-				submitButton.html("<i class='fa fa-spinner fa-spin'></i> Sending...");
-				formResponse.fadeOut(500).text("");
-			},
-			success: function(text) {
-				if(text == "success") {
-					contactForm[0].reset();
-					formResponse.text("Thanks! Your message sent correctly.").fadeIn(1000);
-					submitButton.html("Send Message");
-				} else {
-					formResponse.text(text).fadeIn(1000);
+	
+})(jQuery); 
+
+// contact form submit
+			window.addEventListener("DOMContentLoaded", function () {
+
+				// get the form elements defined in your form HTML above
+
+				var form = document.getElementById("contact-form");
+				var button = document.getElementById("submit");
+				var status = document.getElementById("form-status");
+
+				// Success and Error functions for after the form is submitted
+
+				function success() {
+					button.innerHTML = "<i class='fa fa-spinner fa-spin'></i> Sending..."
+					form.reset();
+					setTimeout(() => { button.innerHTML = "Send Message"; }, 500);
+					status.innerHTML= "Thanks! Your message sent correctly.";
 				}
+
+				function error() {
+					button.innerHTML = "<i class='fa fa-spinner fa-spin'></i> Sending..."
+					setTimeout(() => { status.innerHTML = "Oops! There was a problem."; }, 500);
+				}
+
+				// handle the form submission event
+
+				form.addEventListener("submit", function (ev) {
+					ev.preventDefault();
+					var data = new FormData(form);
+					ajax(form.method, form.action, data, success, error);
+				});
+			});
+
+			// helper function for sending an AJAX request
+
+			function ajax(method, url, data, success, error) {
+				var xhr = new XMLHttpRequest();
+				xhr.open(method, url);
+				xhr.setRequestHeader("Accept", "application/json");
+				xhr.onreadystatechange = function () {
+					if (xhr.readyState !== XMLHttpRequest.DONE) return;
+					if (xhr.status === 200) {
+						success(xhr.response, xhr.responseType);
+					} else {
+						error(xhr.status, xhr.response, xhr.responseType);
+					}
+				};
+				xhr.send(data);
 			}
-		});
-	}
-})(jQuery);

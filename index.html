@@ -11,8 +11,6 @@
 
 	<title>Bakre Ayomide | Full Stack Web Dev</title>
 	
-	<!--particles-->
-	<link rel="stylesheet" type="text/css" href="css/particles.css" />
 	<!-- Favicons Links -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -24,8 +22,6 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- Animate css file -->
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- Slick Slider css file -->
-	<link rel="stylesheet" href="css/slick.css">
 	<!-- Custom styles css file -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Color styles css file -->
@@ -44,6 +40,12 @@
 
 	<!-- start Home Section -->
 	<div id="home" class="main">
+		
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
+	
+
 		<!-- Navigation -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<!-- Start container -->
@@ -779,6 +781,9 @@
 
 	<!-- Start Contact Section -->
 	<div id="contact" class="section text-center">
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
 		<div class="container">
 			<div class="overlay"></div>
 			<div class="row">
@@ -803,7 +808,7 @@
 							<div class="info-wrapper">
 								<i class="fa fa-phone fa-fw"></i>
 								<h4>Call Me</h4>
-								<p class="para">(+020) 12 221 187 22 <br> (+020) 11 221 187 21</p>
+								<p class="para">(+234) 813 2737 794</p>
 							</div>	
 						</div>
 					</div>
@@ -812,50 +817,59 @@
 							<div class="info-wrapper">
 								<i class="fa fa-envelope-o fa-fw"></i>
 								<h4>Send Message</h4>
-								<p class="para">info@prema.ca <br> admin@prema.ca</p>
+								<p class="para">ayomidebakre@gmail.com</p>
 							</div>	
+						</div>
+						<div class="col-sm-6 col-xs-12 call-info wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
+							<div class="info-wrapper">
+								<i class="fa fa-clock-o fa-fw"></i>
+								<h4>Work Time</h4>
+								<p class="para">Sat - Thr : 8.00 - 16.00 <br> Friday: Holiday</p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
 					<!-- Start Contact Form -->
-					<form data-toggle="validator" id="contact-form" role="form" action="https://formspree.io/f/mnqogjga" method="POST">
+					<form data-toggle="validator" id="contact-form" role="form" action="https://formspree.io/f/xqkgyqgy" method="POST">
 						<div class="form-intro">
 							<h4>Leave Me A Message</h4>
 							<div class="separator"></div>
-						</div>
 						<div class="form-group">
 							<div class="input-group">
 								<label for="name" class="input-group-addon">
 									<span class="glyphicon glyphicon-user"></span>
 								</label>
-								<input type="text" placeholder="Your Name" class="form-control col-xs-12" id="name" name="name" data-error="Please enter a correct name." required>
-							</div>							
+								<input type="text" placeholder="Your Name" class="form-control col-xs-12" id="name" name="name"
+									data-error="Please enter a correct name." required>
+							</div>
 							<span class="help-block with-errors"></span>
 						</div>
 						<div class="form-group">
 							<div class="input-group">
-								<label for="mail" class="input-group-addon">
+								<label for="email" class="input-group-addon">
 									<span class="glyphicon glyphicon-envelope"></span>
 								</label>
-								<input type="text" name="_replyto" placeholder="Your E-mail" class="form-control col-xs-12" id="mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-error="Please enter a correct E-mail." required>
-							</div>							
+								<input type="email" placeholder="Your E-mail" class="form-control col-xs-12" id="mail" name="email"
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-error="Please enter a correct E-mail." required>
+							</div>
 							<span class="help-block with-errors"></span>
 						</div>
-						<div class="form-group">					
+						<div class="form-group">
 							<div class="input-group">
 								<label for="message" class="input-group-addon">
 									<span class="glyphicon glyphicon-comment"></span>
 								</label>
-								<textarea class="form-control" rows="4" id="message" name="message" placeholder="Type your message" data-error="Please enter your message" required></textarea>
-							</div>				
+								<textarea class="form-control" rows="4" id="message" name="message" placeholder="Type your message"
+									data-error="Please enter your message" required></textarea>
+							</div>
 							<span class="help-block with-errors"></span>
 						</div>
 						<div>
-							<button name="submit" type="submit" id="submit" class="btn btn-custom btn-block">Send Message</button>
-						</div>					
-					</form>  <!-- End Contact Form -->
-					<div class="form-response">&nbsp;</div>
+							<button type="submit" id="submit" class="btn btn-custom btn-block">Send Message</button>
+						</div>
+					</form> <!-- End Contact Form -->
+					<div id = "form-status" class="form-response"></div>
 				</div>
 			</div>
 			<div class="row">
@@ -898,6 +912,7 @@
 		</div>
 	</div>
 	<!-- End To Top Button -->
+
 	<!-- jQuery JS file -->
 	<script src="js/jquery-1.12.1.min.js"></script>
 	<!-- Bootstrap JS file -->
@@ -910,25 +925,10 @@
 	<script src="js/smoothscroll.js"></script>
 	<!-- appear JS file -->
 	<script src="js/jquery.appear.js"></script>
-	<!-- Count-to JS file -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- EasyPieChart JS file -->
-	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- Mixitup JS file -->
 	<script src="js/jquery.mixitup.min.js"></script>
-	<!-- Slick Slider JS file -->
-	<script src="js/slick.min.js"></script>
-	<!-- Typed JS file -->
-	<script src="js/typed.min.js"></script>
 	<!-- Bootstrap form validator JS file -->
 	<script src="js/validator.min.js"></script>
-	<!-- Google Map -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJOx2cEs3x3dTSubqABijclN_3uEmL7f8"></script>
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> -->
-	<!-- Map JS file -->
-	<script src="js/gmaps.min.js"></script>
-	<!-- Light Map Js file -->
-	<script class="map-script" src="js/light-map.js"></script>
 	<!-- Custom JS file -->
 	<script src="js/scripts.js"></script>
 	<script src="js/headline.js"></script>

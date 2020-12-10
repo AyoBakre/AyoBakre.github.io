@@ -37,17 +37,6 @@
 /* Skills Section */
 #skills .skill .chart span.percent {color: #0C7CD5;}
 
-/* Testimonials Section */
-#testimonials .carousel .carousel-indicators li.active {background: #0C7CD5;}
-#testimonials .carousel .carousel-control {border: 1px solid #0C7CD5;}
-#testimonials .carousel .carousel-control:hover {background: #0C7CD5;}
-
-/* Experiences Section */
-#experiences .timeline .event .event-left i {color: #0C7CD5;}
-#experiences .timeline .event .event-left h4 {background: #0C7CD5;}
-#experiences .timeline .event .event-right::before {background: #0C7CD5;}
-#experiences .timeline .event .event-right::after {border: 2px solid #0C7CD5;}
-
 /* Contact Section */
 #contact .call-info i {background: #0C7CD5;}
 #contact .call-info:hover .info-wrapper {background: #0C7CD5;}
