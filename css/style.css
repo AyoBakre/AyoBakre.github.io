@@ -404,7 +404,7 @@ a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
 
 #det .para a:hover {
 	color: blue;
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 /* End About Me Section */
 
@@ -975,7 +975,6 @@ footer .copyright{
 	
 	.hero-content-wrapper .hero-content h1 {font-size: 3em;}
 	.hero-content-wrapper .hero-content h3 {font-size: 1em;}
-	#home a.go-down {display: none;}
 
 	/* Portfolio Section */
 	#portfolio .controls button {

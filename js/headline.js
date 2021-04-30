@@ -3,7 +3,7 @@
 
 "use strict";
 var i = 0;
-var txt = "I'm a Software Developer_";
+var txt = "Software Developer_";
 var speed = 100;
 
 function typeWriter() {
