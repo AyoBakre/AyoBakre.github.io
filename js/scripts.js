@@ -1,6 +1,15 @@
 /* global $, alert, console*/
 
 
+
+$( document ).ready(function() {
+	var homeSec = $("#home");
+	homeSec.height($(window).height());
+
+	$(window).resize(function() {
+		homeSec.height($(window).height());
+	});
+});
 (function($) {
 	"use strict";
 
@@ -8,12 +17,7 @@
 			2 - Make Header takes the Full
 			Height of the window
 	----------------------------------------------------- */
-	var homeSec = $("#home");
-	homeSec.height($(window).height());
-
-	$(window).resize(function() {
-		homeSec.height($(window).height());
-	});
+	
 
 	/* ---------------------------------------------------
 			3 - Parallax Effect
