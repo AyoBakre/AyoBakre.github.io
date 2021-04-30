@@ -5,16 +5,6 @@
 	"use strict";
 
 	/* ---------------------------------------------------
-			1 - Adjust Loading Page
-	----------------------------------------------------- */
-	$(window).load(function() {
-		$(".loading .loading-wrapper").delay(500).animate({
-			 top: "-100%"
-		}, 1000, "easeInQuart");
-		$(".loading").delay(1100).fadeOut(1500);
-	});
-
-	/* ---------------------------------------------------
 			2 - Make Header takes the Full
 			Height of the window
 	----------------------------------------------------- */
