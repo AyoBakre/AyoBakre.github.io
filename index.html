@@ -1,587 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
+
+<!-- Mirrored from ryanfitzgerald.github.io/devportfolio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Mar 2023 11:06:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-	<meta charset="utf-8">
-	<!-- IE compatibility -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Bakre Ayomide">
-
-	<title>Bakre Ayomide | Full Stack Web Dev</title>
-	
-	<!-- Favicons Links -->
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-	<link rel="manifest" href="img/favicons/site.webmanifest">	
-	<!-- Bootstrap css file -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Fontawesome library css file -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Animate css file -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Custom styles css file -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Color styles css file -->
-	<link rel="stylesheet" href="css/colors/color.css">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-<body id="top-page" data-spy="scroll" data-target=".navbar-fixed-top">
 
-	<!-- start Home Section -->
-	<div id="home" class="main">
-		<!-- Navigation -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<!-- Start container -->
-			<div class="container">
-				<!-- Logo and toggle  -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collaps" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Start Logo 
-			  		<a class="scroll-link navbar-brand" href="#top-page">Res <span class="colored-brand">ume</span></a>
-			  		 End Logo -->
-				</div>
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="navbar-collaps">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active">
-							<a class="scroll-link" href="#top-page">Home</a>
-						</li>
-						<li>
-							<a class="scroll-link" href="#about">About Me</a>
-						</li>
-						<li>
-							<a class="scroll-link" href="#skills">My Skills</a>
-						</li>
-						<li>
-							<a class="scroll-link" href="#portfolio">Portfolio</a>
-						</li>											
-						<li>
-							<a class="scroll-link" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>   <!-- /.navbar-collapse --> 
-			</div>   <!-- End container -->
-		</nav>   <!-- End Navigation -->
-		<!-- Start Content -->
-		<div class="hero-content-wrapper overlay">
-			<div class="hero-content text-center">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<h1>Bakre Ayomide</h1>
-							<!-- heading text -->
-							<h3 id="type" class="skills"></h3>
-							<!-- heading text ends!-->
-							<a href="#portfolio" class="scroll-link btn btn-custom reverse light">Portfolio</a>
-							<a href="/Bakre Ayomide's Resume.pdf" target="_blank" class="btn btn-custom">Resume</a>
-						</div>
-					</div>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Ryan Fitzgerald</h1>
+            <h2>Software Engineer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
 
-				</div>				
-			</div>
-		</div> <!-- End Content -->
-		
-		<a href="#about" class="go-down scroll-link">
-			<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-		</a>
-	</div>
-	<!-- ends Home Section  -->
+        <div id="lead-overlay"></div>
 
-	<!-- Start About Me Section -->
-	<section id="about" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="profile-intro text-center">
-					<h1>Bakre Ayomide</h1>
-					<div class="separator centered"></div>
-					<p class="title">Software Developer</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<!-- My Personal Info -->
-				<div id = 'profile'class="profile text-center col-sm-5 col-sm-push-7">
-					<div>
-						<h4>Personal Info</h4>
-						<div class="separator"></div>
-						<div id="det">
-							<p class="para"><span class="highlight" >Name:</span> Bakre Ayomide</p>
-						<p class="para"><span class="highlight">Location:</span> Lagos, Nigeria</p>
-						<p class="para"><span class="highlight">E-mail:</span> <a href="mailto:ayomidebakre@gmail.com">ayomidebakre@gmail.com</a></p>
-						<p class="para"><span class="highlight">Website:</span> <a href="https://ayobakre.github.io" target="_blank" >https://ayobakre.github.io</a></p>
-						<p class="para"><span class="highlight">My Phone:</span> <a href="tel:+2348132737794">+234 813 2737 794</a></p>
-						<p class="para"><span class="highlight">Github Account: </span> <a href="https://github.com/AyoBakre" target="_blank">https://github.com/AyoBakre</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="info-tabs col-sm-7 col-sm-pull-5">
-					<!-- Tabs Nav -->
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active">
-							<a href="#about-me-panel" aria-controls="about-me-panel" role="tab" data-toggle="tab">About Me</a>			
-						</li>
-					</ul>
-					<!-- Tabs Panel -->
-					<div class="tab-content">
-						<!-- About Me Panel -->
-						<div role="tabpanel" class="tab-pane fade in active" id="about-me-panel">
-							<!--<h4>About Me</h4>
-							<div class="separator"></div> -->
-							<p class="para"><span>I am highly motivated self-taught software developer seeking to launch a career building web and mobile applications and services. I am familiar with the development and deployment process for many web-based technologies. <br>  Eager for an opportunity to work
-							in a challenging environment to prove my skills and utilize my knowledge and intelligence in the growth of the
-							organization.</span></p>
-							</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End About Me Section -->
-	<section id="skills" style="background-color: #090a0f"> 
-		<div class="inner">
-		<div class="skills-title">
-			<h2 style="color: #ffffff;">My Skills</h2>
-		</div>
-		<div class="skills-container">
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="/img/Skills/html-logo.png" alt="html logo" class="skill-icon">
-					</div>
-					<h3 style="color: #ffffff;">HTML 5</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/css-logo.png" alt="css logo" class="skill-icon">
-					</div>
-					<h3 style="color: #ffffff;">CSS 3</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/js-logo.jpg" alt="js logo" class="skill-icon">
-					</div>
-					<h3 style="color: #ffffff;">JavaScript</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/git.png" alt="react logo" class="skill-icon">
-					</div>
-					<h3 style="color: #ffffff;">Git</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/bootstrap-logo.png" alt="bootstrap logo" class="skill-icon">
-					</div>
-					<h3 style="color: #ffffff;">Bootstrap</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/python-logo.png" alt="python logo" class="skill-icon">
-					</div>
-					<h3 style="color: #ffffff;">Python</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/flask-logo.jpg" alt="flask logo" class="skill-icon">
-					</div>
-					<h3 style="color: #ffffff;">Flask</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/django.png" alt="django logo" class="skill-icon">
-					</div>
-					<h3 style="color: #ffffff;">Django</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/sql-logo.jpg" alt="mysql logo" class="skill-icon">
-					</div>
-					<h3 style="text-transform: None; color: #ffffff;">SQlite</h3>
-				</div>
-			</div>
-			<div class="skill-box">
-				<div class="skill-title">
-					<div class="img">
-						<img src="img/Skills/PostgreSQL.png" alt="mysql logo" class="skill-icon">
-					</div>
-					<h3 style="text-transform: None; color: #ffffff;">PostgreSQl</h3>
-				</div>
-			</div>
-		</div>
-		</div>
-	</section>
-	
-	<!-- Start Portfolio Section -->
-	<section id="portfolio" class="section text-center">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="section-intro">
-						<h2>My Projects</h2>
-						<div class="separator centered"></div>
-						</div>
-				</div>
-			</div>
-		
-			<div id="Container" class="row">
-				<!-- Project 1 -->
-				<div class="col-md-4 col-sm-6 col-xs-12" data-my-order="1">
-					<div class="project" data-toggle="modal" data-target="#modal">
-						<div class="project-img-wrapper">
-							<img class="center-block img-responsive" src="img/portfolio/Capture.PNG" alt="project-1">
-						</div>
-						<div class="img-overlay">
-							<div class="overlay-text">
-								<h4>Full-Featured Facebook Clone</h4>
-								<p>Web Application</p>
-							</div>
-						</div>
-					</div>	
-					<!-- Modal -->
-					<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="label_1">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="label_1">Full-Featured Facebook Clone Web Application</h4>
-					      </div>
-					      <div class="modal-body">
-					        <img class="center-block img-responsive thumbnail" src="img/portfolio/Capture.PNG" alt="project-1">
-					        <h4>Full-Featured Facebook Clone Web Application</h4>
-					        <div class="separator"></div>
-					        <p class="para subtitle">-- Html, CSS, Javascript and Python- Flask--</p>
-					        <p class="para project-description">A full-featured facebook-clone web application with the backend written in Python-Flask and frontend written with html,css, bootstrap and javascript.
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
-							<br>	Features: <br> 1. Users can Create Accounts <br> 2. Users can make blog tasks<br> 3. Users can follow other users<br> 4. Users can edit profile details<br> 5. Users can recover forgotten password with their email<br> 6. Users can send private messages to other users</p>
-					        <a href="https://facebook-app-clone.herokuapp.com/" class="btn btn-custom btn-custom-reverse">Live Preview</a>
-					        <a href="https://github.com/AyoBakre/Facebook-clone-Web-Application" target="_blank" class="btn btn-custom dark" data-dismiss="modal">Github Repo</a>
-					      </div>
-					    </div>
-					  </div>
-					</div>  <!-- End Modal -->
-				</div>
-				<!-- Project 2 -->
-				<div class="col-md-4 col-sm-6 col-xs-12" data-my-order="2">
-					<div class="project" data-toggle="modal" data-target="#modal-2">
-						<div class="project-img-wrapper">
-							<img class="center-block img-responsive" src="img/portfolio/Capture1.PNG" alt="project-2">
-						</div>
-						<div class="img-overlay">
-							<div class="overlay-text">
-								<h4>Todo List Web Application
-</h4>
-								<p>Web Application</p>
-							</div>
-						</div>
-					</div>	
-					<!-- Modal -->
-					<div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="label_2">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="label_2">Todo List Web Application</h4>
-					      </div>
-					      <div class="modal-body">
-					        <img class="center-block img-responsive thumbnail" src="img/portfolio/Capture1.PNG" alt="project-2">
-					        <h4>Todo List Web Application
-</h4>
-					        <div class="separator"></div>
-					        <p class="para subtitle">-- Html, CSS, Javascript and Python- Flask--
-</p>
-					        <p class="para project-description">This is a To-Do list app where users can create, update and delete tasks. Built with python-flask, html and css. </p>
-					        <a href="https://appointments-list.herokuapp.com/" target="_blank" class="btn btn-custom btn-custom-reverse">Live Preview</a>
-					        <a href="https://github.com/AyoBakre/ToDo-App" target="_blank" class="btn btn-custom dark" data-dismiss="modal">GitHub Repo</a>
-					      </div>
-					    </div>
-					  </div>
-					</div>  <!-- End Modal -->
-				</div>
-				<!-- Project 6-->
-				<div class="col-md-4 col-sm-6 col-xs-12" data-my-order="3">
-					<div class="project" data-toggle="modal" data-target="#modal-6">
-						<div class="project-img-wrapper">
-							<img class="center-block img-responsive" src="img/portfolio/Capture5.PNG" alt="project-4">
-						</div>
-						<div class="img-overlay">
-							<div class="overlay-text">
-								<h4>Vertrauen Africa</h4>
-								<p>Web Design</p>
-							</div>
-						</div>
-					</div>	
-					<!-- Modal -->
-					<div class="modal fade" id="modal-6" tabindex="-1" role="dialog" aria-labelledby="label_4">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="label_4">Vertrauen Africa</h4>
-					      </div>
-					      <div class="modal-body">
-					        <img class="center-block img-responsive thumbnail" src="img/portfolio/Capture5.PNG" alt="project-4">
-					        <h4>Vertrauen Africa</h4>
-					        <div class="separator"></div>
-					        <p class="para subtitle">-- Html, Css and Javascript --
-</p>
-					        <p class="para project-description">A landing page for Vertrauen Africa developed with html, css, bootstrap and javascript</p>
-					        <a href="https://vertrauen.africa/" target = "_blank"class="btn btn-custom btn-custom-reverse">Live Preview</a>
-					        <a href="https://github.com/AyoBakre/vertrauen.africa" target="_blank" class="btn btn-custom dark scroll-link" data-dismiss="modal">GitHub Repo</a>
-					      </div>
-					    </div>
-					  </div>
-					</div>  <!-- End Modal -->
-				</div>
-				
-				
-			</div>
-			<div id="container" class="row">
-				<!-- Project 3 -->
-				<div class="col-md-4 col-sm-6 col-xs-12" data-my-order="3">
-					<div class="project" data-toggle="modal" data-target="#modal-3">
-						<div class="project-img-wrapper">
-							<img class="center-block img-responsive" src="img/portfolio/Capture2.PNG" alt="project-3">
-						</div>
-						<div class="img-overlay">
-							<div class="overlay-text">
-								<h4>WhatsApp ChatBot</h4>
-								<p>python / automation</p>
-							</div>
-						</div>
-					</div>	
-					<!-- Modal -->
-					<div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="label_3">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="label_3">WhatsApp ChatBot</h4>
-					      </div>
-					      <div class="modal-body">
-					        <img class="center-block img-responsive thumbnail" src="img/portfolio/Capture2.PNG" alt="project-3">
-					        <h4>WhatsApp ChatBot</h4>
-					        <div class="separator"></div>
-					        <p class="para subtitle">-- Python-Flask and Twilio --</p>
-					        <p class="para project-description">This is a whatsapp conversational chatbot that can
-							be utilized as a customer support bot.</p>
-					        <a href="https://github.com/AyoBakre/WhatsApp-Bot" target = "_blank" class="btn btn-custom btn-custom-reverse">Live Preview</a>
-					        <a href="https://github.com/AyoBakre/WhatsApp-Bot" target = "_blank" class="btn btn-custom dark scroll-link" data-dismiss="modal">GitHub Repo</a>
-					      </div>
-					    </div>
-					  </div>
-					</div>  <!-- End Modal -->
-				</div>
-				
-				<!-- Project 4 -->
-				<div class="col-md-4 col-sm-6 col-xs-12" data-my-order="2">
-					<div class="project" data-toggle="modal" data-target="#modal-4">
-						<div class="project-img-wrapper">
-							<img class="center-block img-responsive" src="img/portfolio/Capture3.PNG" alt="project-4">
-						</div>
-						<div class="img-overlay">
-							<div class="overlay-text">
-								<h4>Portfolio Website</h4>
-								<p>Web Design</p>
-							</div>
-						</div>
-					</div>	
-					<!-- Modal -->
-					<div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="label_4">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="label_4">Portfolio Website</h4>
-					      </div>
-					      <div class="modal-body">
-					        <img class="center-block img-responsive thumbnail" src="img/portfolio/Capture3.PNG" alt="project-4">
-					        <h4>Portfolio Website</h4>
-					        <div class="separator"></div>
-					        <p class="para subtitle">-- Html, Css and Javascript --
-</p>
-					        <p class="para project-description">This is a personal portfolio website.</p>
-					        <a href="http://ayobakre.github.io/" target = "_blank"class="btn btn-custom btn-custom-reverse">Live Preview</a>
-					        <a href="https://github.com/AyoBakre/AyoBakre.github.io" target="_blank" class="btn btn-custom dark scroll-link" data-dismiss="modal">GitHub Repo</a>
-					      </div>
-					    </div>
-					  </div>
-					</div>  <!-- End Modal -->
-				</div>
-				<!-- Project 5 -->
-				<div class="col-md-4 col-sm-6 col-xs-12" data-my-order="1">
-					<div class="project" data-toggle="modal" data-target="#modal-5">
-						<div class="project-img-wrapper">
-							<img class="center-block img-responsive" src="img/portfolio/Capture4.PNG" alt="project-4">
-						</div>
-						<div class="img-overlay">
-							<div class="overlay-text">
-								<h4>Flask Microblog</h4>
-								<p>Web Application</p>
-							</div>
-						</div>
-					</div>	
-					<!-- Modal -->
-					<div class="modal fade" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="label_4">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="label_4">Flask Microblog</h4>
-					      </div>
-					      <div class="modal-body">
-					        <img class="center-block img-responsive thumbnail" src="img/portfolio/Capture4.PNG" alt="project-4">
-					        <h4>Flask Microblog</h4>
-					        <div class="separator"></div>
-					        <p class="para subtitle">-- Html, Css, Javascript and Python-Flask --
-</p>
-					        <p class="para project-description">A microblog web application made with flask. It
-								registers and logs in users. Users can upload blog
-								posts and these posts are displayed with efficient
-								sql querries.
-								.</p>
-					        <a href="https://social-buzz.herokuapp.com/" target = "_blank"class="btn btn-custom btn-custom-reverse">Live Preview</a>
-					        <a href="https://github.com/AyoBakre/flask-microblog" target="_blank" class="btn btn-custom dark scroll-link" data-dismiss="modal">GitHub Repo</a>
-					      </div>
-					    </div>
-					  </div>
-					</div>  <!-- End Modal -->
-				</div>
-			</div>
-			<a href="https://github.com/AyoBakre" target="_blank" class="btn btn-custom reverse light">See More Projects</a>
-		</div>
-	</section>
-	<!-- End Portfolio Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
+                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
+                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
 
-	<!-- Start Contact Section -->
-	<div id="contact" class="section text-center">
-		<div class="container">
-			<div class="overlay"></div>
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="section-intro">
-						<h2>Contact Me</h2>
-						<div class="separator centered"></div>
-					</div>
-				</div>	
-			</div>
-			<div class="row">		
-				<div class="col-md-12">
-					<!-- Start Contact Form -->
-					<form data-toggle="validator" id="contact-form" role="form" action="https://formspree.io/f/xqkgyqgy" method="POST">
-						<div class="form-intro">
-							<h4>Leave Me A Message</h4>
-							<div class="separator"></div>
-						<div class="form-group">
-							<div class="input-group">
-								<label for="name" class="input-group-addon">
-									<span class="glyphicon glyphicon-user"></span>
-								</label>
-								<input type="text" placeholder="Your Name" class="form-control col-xs-12" id="name" name="name"
-									data-error="Please enter a correct name." required>
-							</div>
-							<span class="help-block with-errors"></span>
-						</div>
-						<div class="form-group">
-							<div class="input-group">
-								<label for="email" class="input-group-addon">
-									<span class="glyphicon glyphicon-envelope"></span>
-								</label>
-								<input type="email" placeholder="Your E-mail" class="form-control col-xs-12" id="mail" name="email"
-									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-error="Please enter a correct E-mail." required>
-							</div>
-							<span class="help-block with-errors"></span>
-						</div>
-						<div class="form-group">
-							<div class="input-group">
-								<label for="message" class="input-group-addon">
-									<span class="glyphicon glyphicon-comment"></span>
-								</label>
-								<textarea class="form-control" rows="4" id="message" name="message" placeholder="Type your message"
-									data-error="Please enter your message" required></textarea>
-							</div>
-							<span class="help-block with-errors"></span>
-						</div>
-						<div>
-							<button type="submit" id="submit" class="btn btn-custom btn-block">Send Message</button>
-						</div>
-					</form> <!-- End Contact Form -->
-					<div id = "form-status" class="form-response"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Contact Section -->
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
 
-	<!-- Start Footer Section -->
-	<footer>
-		<br>
-		<br>
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<small class="para" style="color: #ffffff; font-size:20px">&copy; Bakre Ayomide 2020</small>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- End Footer Section -->
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
 
-	<!-- Start To Top Button -->
-	<div id="toTop">
-		<div class="top-button">
-			<i class="fa fa-angle-up"></i>
-		</div>
-	</div>
-	<!-- End To Top Button -->
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
-	<!-- jQuery JS file -->
-	<script src="js/jquery-1.12.1.min.js"></script>
-	<!-- Bootstrap JS file -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- jQuery easing file -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Parallax JS file -->
-	<script src="js/jquery.parallax-1.1.3.js"></script>
-	<!-- Smoothscroll JS file -->
-	<script src="js/smoothscroll.js"></script>
-	<!-- appear JS file -->
-	<script src="js/jquery.appear.js"></script>
-	<!-- Mixitup JS file -->
-	<script src="js/jquery.mixitup.min.js"></script>
-	<!-- Bootstrap form validator JS file -->
-	<script src="js/validator.min.js"></script>
-	<!-- Custom JS file -->
-	<script src="js/scripts.js"></script>
-	<script src="js/headline.js"></script>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+        </div>
+        <!-- End .education-block -->
 
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 YOUR NAME
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
+
+<!-- Mirrored from ryanfitzgerald.github.io/devportfolio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Mar 2023 11:06:10 GMT -->
 </html>
